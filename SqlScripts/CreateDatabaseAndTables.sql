@@ -41,3 +41,9 @@ CREATE TABLE [ComputerStg].[dbo].[dim_payment](
 	[PaymentID] INT IDENTITY (1,1) PRIMARY KEY,
 	[Payment_Method] [nvarchar](50) NOT NULL,
 	)
+
+--Create dim channel
+CREATE TABLE [ComputerStg].[dbo].[dim_channel](
+	[ChannelID] INT IDENTITY (1,1) PRIMARY KEY,
+	[Channel] [nvarchar](50) NOT NULL,
+	)
