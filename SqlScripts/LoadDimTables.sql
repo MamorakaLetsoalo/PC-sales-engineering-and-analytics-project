@@ -17,4 +17,7 @@ INSERT INTO [ComputerStg].[dbo].[dim_store] (Shop_Name,Shop_Age )
 SELECT Shop_Name,Shop_Age
 FROM [ComputerStg].[dbo].[raw_pc_data]
 
-
+--Load dim Product
+INSERT INTO [ComputerStg].[dbo].[dim_product] (PC_Make,PC_Model,Storage_Type,RAM,Storage_Capacity)
+SELECT PC_Make,PC_Model,Storage_Type,RAM,Storage_Capacity
+FROM [ComputerStg].[dbo].[raw_pc_data]
