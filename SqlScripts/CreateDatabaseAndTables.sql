@@ -35,3 +35,9 @@ CREATE TABLE [ComputerStg].[dbo].[dim_product](
 	[RAM] [nvarchar](50) NOT NULL,
 	[Storage_Capacity] [nvarchar](50) NOT NULL
 	)
+
+--Create dim payment
+CREATE TABLE [ComputerStg].[dbo].[dim_payment](
+	[PaymentID] INT IDENTITY (1,1) PRIMARY KEY,
+	[Payment_Method] [nvarchar](50) NOT NULL,
+	)
