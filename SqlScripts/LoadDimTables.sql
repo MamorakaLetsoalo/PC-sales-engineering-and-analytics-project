@@ -31,3 +31,8 @@ FROM [ComputerStg].[dbo].[raw_pc_data]
 INSERT INTO [ComputerStg].[dbo].[dim_channel] (Channel)
 SELECT Channel
 FROM [ComputerStg].[dbo].[raw_pc_data]
+
+--Load dim price
+INSERT INTO [ComputerStg].[dbo].[dim_price] (Cost_Price,Sale_Price,PC_Market_Price )
+SELECT Cost_Price,Sale_Price,PC_Market_Price
+FROM [ComputerStg].[dbo].[raw_pc_data]
