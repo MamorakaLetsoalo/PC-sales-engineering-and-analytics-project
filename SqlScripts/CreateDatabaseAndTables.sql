@@ -25,3 +25,13 @@ CREATE TABLE [ComputerStg].[dbo].[dim_store](
 	[Shop_Name] [nvarchar](50) NOT NULL,
 	[Shop_Age] [int] NOT NULL,
 	)
+
+--Create dim product
+CREATE TABLE [ComputerStg].[dbo].[dim_product](
+	[ProductID] INT IDENTITY (1,1) PRIMARY KEY,
+	[PC_Make] [nvarchar](50) NOT NULL,
+	[PC_Model] [nvarchar](50) NOT NULL,
+	[Storage_Type] [nvarchar](50) NOT NULL,
+	[RAM] [nvarchar](50) NOT NULL,
+	[Storage_Capacity] [nvarchar](50) NOT NULL
+	)
