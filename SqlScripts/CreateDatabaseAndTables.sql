@@ -47,3 +47,11 @@ CREATE TABLE [ComputerStg].[dbo].[dim_channel](
 	[ChannelID] INT IDENTITY (1,1) PRIMARY KEY,
 	[Channel] [nvarchar](50) NOT NULL,
 	)
+
+--Create dim price
+CREATE TABLE [ComputerStg].[dbo].[dim_price](
+	[PriceID] INT IDENTITY (1,1) PRIMARY KEY,
+	[Cost_Price] [int] NOT NULL,
+	[Sale_Price] [int] NOT NULL,
+	[PC_Market_Price] [int] NOT NULL,
+	)
