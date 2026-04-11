@@ -26,3 +26,8 @@ FROM [ComputerStg].[dbo].[raw_pc_data]
 INSERT INTO [ComputerStg].[dbo].[dim_payment] (Payment_Method)
 SELECT Payment_Method
 FROM [ComputerStg].[dbo].[raw_pc_data]
+
+--Load dim channel
+INSERT INTO [ComputerStg].[dbo].[dim_channel] (Channel)
+SELECT Channel
+FROM [ComputerStg].[dbo].[raw_pc_data]
