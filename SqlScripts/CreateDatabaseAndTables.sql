@@ -18,3 +18,10 @@ CREATE TABLE [ComputerStg].[dbo].[dim_location](
 	[Country_or_State] [nvarchar](50) NOT NULL,
 	[Province_or_City] [nvarchar](100) NOT NULL,
 	)
+
+--Create dim store
+CREATE TABLE [ComputerStg].[dbo].[dim_store](
+	[StoreID] INT IDENTITY (1,1) PRIMARY KEY,
+	[Shop_Name] [nvarchar](50) NOT NULL,
+	[Shop_Age] [int] NOT NULL,
+	)
